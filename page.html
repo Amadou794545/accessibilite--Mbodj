@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGO</title>
+    <link rel="stylesheet" type="text/css" href="page.css">
+</head>
+<body>
+<header>
+    <h1>LOGO</h1>
+    <nav>
+        <a href="contact.html" class="header-button">Contact</a>
+    </nav>
+</header>
+    <form id="post-form">
+        <label for="post-title">Titre :</label><br>
+        <input type="text" id="post-title" aria-label="Titre du post"><br>
+        <label for="post-image">Choisissez une image :</label><br>
+        <input type="file" id="post-image" accept="image/*" aria-label="Choisissez une image pour le post"><br>
+        <button type="submit">Publier</button>
+    </form>
+    <div id="posts">
+            <article id="porsche-article">
+                <h2>Porsche</h2>
+                <img src="./img/OIP.jpeg" alt="Image de Porsche">
+                <p>Description de la Porsche...</p>
+                <section>
+                    <h3>Commentaires</h3>
+                    <div id="porsche-comments"></div>
+                    <form>
+                        <label for="porsche-comment">Ajouter un commentaire</label><br>
+                        <input type="text" id="porsche-comment">
+                        <button type="button" onclick="addComment('porsche-comment', 'porsche-comments')">Soumettre</button>
+                    </form>
+                </section>
+            </article>
+
+            <article id="mercedes-article">
+                <h2>Mercedes</h2>
+                <img src="./img/Mercedes-Benz-Logo.png" alt="Logo de Mercedes">
+                <p>Description de la Mercedes...</p>
+                <section>
+                    <h3>Commentaires</h3>
+                    <div id="mercedes-comments"></div>
+                    <form>
+                        <label for="mercedes-comment">Ajouter un commentaire</label><br>
+                        <input type="text" id="mercedes-comment">
+                        <button type="button" onclick="addComment('mercedes-comment', 'mercedes-comments')">Soumettre</button>
+                    </form>
+                </section>
+            </article>
+
+            <article id="ford-article">
+                <h2>Ford</h2>
+                <video width="320" height="240" controls>
+                    <source src="./img/Ford.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la vidéo.
+                </video>
+                <p>La chaîne YouTube officielle de Ford Motor Company. Abonnez-vous pour des vidéos hebdomadaires présentant nos véhicules, nos innovations et des histoires qui vous incitent à aller plus loin. Nos vidéos sont là pour votre divertissement et vous êtes invités à utiliser, partager et intégrer des liens vers toutes nos vidéos, mais les vidéos elles-mêmes sont la propriété de Ford Motor Company. Vous n'êtes en aucun cas autorisé à télécharger et à re-télécharger une vidéo sans le consentement écrit de Ford Motor Company.</p>
+                <section>
+                    <h3>Commentaires</h3>
+                    <div id="ford-comments"></div>
+                    <form>
+                        <label for="ford-comment">Ajouter un commentaire</label><br>
+                        <input type="text" id="ford-comment">
+                        <button type="button" onclick="addComment('ford-comment', 'ford-comments')">Soumettre</button>
+                    </form>
+                </section>
+            </article>
+            </div>
+<footer>
+    <p>© 2024 - Tous droits réservés</p>
+</footer>
+<script src="page.js"></script>
+</body>
+</html>
