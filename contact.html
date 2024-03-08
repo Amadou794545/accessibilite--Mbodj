@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+<body>
+<header>
+    <h1>Contact</h1>
+    <nav>
+        <a href="page.html" class="header-button">Accueil</a>
+    </nav>
+</header>
+<main>
+    <form action="/submit_contact_form" method="post">
+        <label for="name">Nom:</label><br>
+        <input type="text" id="name" name="name" required aria-label="Nom"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required aria-label="Email"><br>
+        <label for="subject">Sujet:</label><br>
+        <input type="text" id="subject" name="subject" required aria-label="Sujet"><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" required aria-label="Message"></textarea><br>
+        <input type="submit" value="Envoyer">
+    </form>
+</main>
+</body>
+</html>
